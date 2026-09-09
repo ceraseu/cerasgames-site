@@ -1,0 +1,49 @@
+<!doctype html>
+<!--
+THESIS: Ceras Games is a small developer's workbench, not a one-game campaign.
+OWN-WORLD: Ink blue, paper white, card-red and brass; editorial type meets quiet tabletop geometry.
+STORY: Visitors meet the studio first, then understand the first game and its current release stage.
+FIRST VIEWPORT: A compact wordmark frames a large studio statement, with four suit marks forming a tabletop in the margin.
+FORM: A single-workbench composition; the game sits on one ruled sheet rather than inside a marketing-card grid.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ceras Games is de onafhankelijke studio achter Klaverjas Brain Trainer.">
+    <title>Ceras Games — onafhankelijke game development</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <a class="wordmark" href="#bovenaan" aria-label="Ceras Games, naar boven">CERAS <span>GAMES</span></a>
+        <a class="nav-link" href="#games">Games <span aria-hidden="true">↓</span></a>
+      </nav>
+      <section class="hero" id="bovenaan" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="intro">Onafhankelijke game development</p>
+          <h1 id="hero-title">Kleine spellen.<br>Vol aandacht.</h1>
+          <p class="lead">Ceras Games is de studio van één ontwikkelaar. Ik maak spellen die helder voelen, goed in de hand liggen en je uitnodigen om nog één keer te spelen.</p>
+          <a class="text-link" href="#games">Bekijk de eerste game <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="suits" aria-hidden="true"><span>♣</span><span>♥</span><span>♠</span><span>♦</span></div>
+      </section>
+      <section class="game" id="games" aria-labelledby="game-title">
+        <div class="game-header"><p>Nu in ontwikkeling</p><h2 id="game-title">Klaverjas<br>Brain Trainer</h2></div>
+        <div class="game-description">
+          <p>Een mobiele oefenapp voor mensen die al kunnen klaverjassen. Train kaartvolgorde, punten, roem en slaginzicht — kort, rustig en precies waar het aan tafel telt.</p>
+          <p class="status">De eerste versie is momenteel in gesloten test voor iOS en Android.</p>
+        </div>
+        <div class="card-table" aria-label="Illustratie van vier speelkaarten op een klaverjastafel">
+          <div class="playing-card card-one"><strong>J</strong><span>♣</span></div><div class="playing-card card-two"><strong>A</strong><span>♥</span></div><div class="playing-card card-three"><strong>9</strong><span>♠</span></div><div class="playing-card card-four"><strong>10</strong><span>♦</span></div>
+        </div>
+      </section>
+      <section class="outlook" aria-labelledby="outlook-title"><p>Dit is het begin.</p><h2 id="outlook-title">Meer games volgen wanneer ze er klaar voor zijn.</h2></section>
+    </main>
+    <footer><p>© <span id="year">2026</span> Ceras Games</p><a href="privacy.html">Privacy</a></footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
