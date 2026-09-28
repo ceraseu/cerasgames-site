@@ -1,9 +1,9 @@
 :root {
   --test-green: #073d30;
   --test-deep: #052f26;
-  --test-cream: #f3efdf;
+  --test-cream: #f4f1e6;
   --test-paper: #f8f6ed;
-  --test-gold: #e7bd78;
+  --test-gold: #f0cf87;
   --test-muted: #c7d4c9;
 }
 
@@ -102,4 +102,103 @@ body:not(.home) footer > * { width: auto; margin-inline: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .tester-scroll span, .option-button, .feedback-link span { transition: none; }
+}
+
+/* Keep the tester page on the same visual frame as the homepage. */
+body:not(.home) { --gutter: clamp(28px, 6.1vw, 84px); background: #f4f1e6; }
+body:not(.home) .header {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 68px;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--gutter);
+  border-bottom: 1px solid #ffffff20;
+  color: #f8f6ec;
+}
+body:not(.home) .header .brand { display: flex; align-items: center; gap: 12px; color: inherit; font-size: 16px; font-weight: 750; letter-spacing: .16em; text-decoration: none; }
+body:not(.home) .header .brand img { display: block; width: 40px; height: 40px; border-radius: 9px; object-fit: cover; }
+body:not(.home) .header nav { display: flex; gap: 36px; }
+body:not(.home) .header nav a { color: inherit; font-size: 14px; text-decoration: none; }
+body:not(.home) .header nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
+body:not(.home) main.tester-main { --gutter: clamp(28px, 6.1vw, 84px); }
+.tester-hero {
+  min-height: 630px;
+  grid-template-columns: minmax(0, .93fr) minmax(0, 1.2fr);
+  gap: 8px;
+  padding: 100px max(var(--gutter), calc((100vw - 1320px) / 2)) 35px;
+}
+.tester-hero::before {
+  inset: -320px auto auto 38%;
+  width: 700px;
+  height: 700px;
+  border-color: rgb(255 255 255 / 4%);
+  box-shadow: 0 0 0 100px rgb(255 255 255 / 2.5%), 0 0 0 200px rgb(255 255 255 / 1.8%);
+}
+.tester-hero::after {
+  position: absolute;
+  z-index: 4;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: clamp(20px, 1.55vw, 40px);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath fill='%23f4f1e6' d='M0 15 C160 25 300 26 470 20 C650 14 760 32 930 26 C1110 20 1280 9 1440 16 V40 H0Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  content: "";
+  pointer-events: none;
+}
+.tester-hero-copy { max-width: 480px; padding: 24px 0 2px; }
+.tester-hero h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(52px, 5.4vw, 76px); font-weight: 500; letter-spacing: -.04em; line-height: .96; }
+.tester-lead { max-width: 390px; margin: 17px 0 20px; font-size: 15px; line-height: 1.48; }
+.tester-scroll { display: flex; width: 258px; min-height: 54px; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.2rem; padding: 0 24px; border-radius: 3px; background: var(--test-gold); color: #18372e; font-size: .95rem; text-decoration: none; }
+.tester-scroll span { display: block; width: auto; height: auto; border: 0; border-radius: 0; font-size: 1.3rem; }
+.tester-art { width: min(100%, 620px); height: 535px; min-height: 0; justify-self: center; }
+.tester-screen { position: absolute; top: 48px; width: 195px; height: 425px; margin: 0; overflow: hidden; border: 5px solid #252a28; border-radius: 29px; background: #111; box-shadow: 0 15px 30px rgb(0 0 0 / 31%); }
+.tester-screen img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tester-screen-start { z-index: 1; left: 3%; transform: rotate(-4deg); }
+.tester-screen-cards { z-index: 2; right: 15%; transform: rotate(5deg); }
+.tester-screen-quiz { z-index: 3; top: 0; left: 30.5%; width: 213px; height: 470px; }
+.tester-note { z-index: 4; right: 0; bottom: 2.4rem; }
+.tester-join, .tester-onboarding, .tester-feedback, .tester-privacy { width: min(100% - 2 * var(--gutter), 1320px); }
+.tester-join { padding-top: 3.7rem; }
+body:not(.home) footer { position: relative; width: 100%; max-width: none; padding: 1.2rem var(--gutter); border-top: 5px solid #0a493b; background: #073d30; color: #e9eee7; }
+body:not(.home) footer::before {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  left: 0;
+  height: 20px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 40' preserveAspectRatio='none'%3E%3Cpath fill='%23073d30' d='M0 27 C180 31 350 19 530 23 C700 27 840 15 1000 20 C1170 25 1310 12 1440 8 V40 H0Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  content: "";
+  pointer-events: none;
+}
+body:not(.home) footer a { color: #e9eee7; }
+
+@media (max-width: 850px) {
+  body:not(.home) .header { height: 66px; }
+  .tester-hero { min-height: 0; grid-template-columns: 1fr; gap: 8px; padding: 85px var(--gutter) 35px; }
+  .tester-hero-copy { max-width: 600px; padding-top: 15px; }
+  .tester-hero h1 { font-size: clamp(48px, 10vw, 68px); }
+  .tester-lead { max-width: 480px; }
+  .tester-art { position: relative; right: auto; bottom: auto; width: min(100%, 600px); height: 470px; min-height: 470px; justify-self: center; opacity: 1; transform: none; transform-origin: center; }
+}
+@media (max-width: 560px) {
+  body:not(.home) .header { height: 60px; }
+  body:not(.home) .header .brand { gap: 9px; font-size: 13px; }
+  body:not(.home) .header .brand img { width: 34px; height: 34px; }
+  body:not(.home) .header nav { gap: 18px; }
+  body:not(.home) .header nav a { font-size: 12px; }
+  .tester-hero { padding: 80px var(--gutter) 25px; }
+  .tester-hero h1 { font-size: 48px; }
+  .tester-lead { font-size: 14px; }
+  .tester-scroll { width: 100%; max-width: 260px; }
+  .tester-art { position: relative; right: auto; bottom: auto; width: min(100%, 440px); height: 360px; min-height: 360px; margin-top: 8px; opacity: 1; transform: none; transform-origin: center; }
+  .tester-screen { top: 28px; width: 143px; height: 290px; border-width: 4px; border-radius: 20px; }
+  .tester-screen-start { left: 2%; }
+  .tester-screen-cards { right: 2%; }
+  .tester-screen-quiz { top: 5px; left: 33%; width: 155px; height: 330px; border-radius: 21px; }
+  .tester-note { right: 0; bottom: .5rem; font-size: .85rem; }
 }
