@@ -121,7 +121,7 @@ body:not(.home) .header {
   color: #f8f6ec;
 }
 body:not(.home) .header .brand { display: flex; align-items: center; gap: 12px; color: inherit; font-size: 16px; font-weight: 750; letter-spacing: .16em; text-decoration: none; }
-body:not(.home) .header .brand img { display: block; width: 40px; height: 40px; border-radius: 9px; object-fit: cover; }
+body:not(.home) .header .brand img { display: block; width: 40px; height: 40px; clip-path: circle(39.2% at 50% 50%); object-fit: cover; }
 body:not(.home) .header nav { display: flex; gap: 36px; }
 body:not(.home) .header nav a { color: inherit; font-size: 14px; text-decoration: none; }
 body:not(.home) .header nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
