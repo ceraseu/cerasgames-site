@@ -3,90 +3,80 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ceras Games maakt spellen met aandacht. Ontdek Klaverjas Brain Trainer.">
-    <meta name="theme-color" content="#073d30">
+    <meta name="description" content="Ceras Games maakt kleine spellen met aandacht voor detail en plezier in het spelen. Ontdek Klaverjas Brain Trainer.">
+    <meta name="theme-color" content="#f4f1e8">
     <title>Ceras Games — spellen met aandacht</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="home.css">
   </head>
   <body>
-    <header class="header">
-      <a class="brand" href="index.html#top">CERAS GAMES</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Ceras Games, naar boven"><span class="brand-mark" aria-hidden="true">C</span><span>CERAS <b>GAMES</b></span></a>
       <nav aria-label="Hoofdnavigatie">
-        <a href="index.html#games">Games</a>
-        <a href="index.html#nieuws" hidden>Nieuws</a>
-        <a href="testen/index.html">Testen</a>
+        <a href="#games">Games</a>
+        <a href="#nieuws" hidden>Nieuws</a>
+        <a class="nav-cta" href="testen/index.html">Testen <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
-    <main id="top">
-      <section class="hero" id="games">
-        <div class="wrap hero-wrap">
-          <div class="hero-copy">
-            <p class="eyebrow">KLAVERJAS BRAIN TRAINER <i></i></p>
-            <h1>Krijg grip op<br>het spel, kaart<br>voor kaart.</h1>
-            <p class="intro">Klaverjas Brain Trainer is een mobiele oefenapp voor iedereen die beter wil worden in klaverjassen. Train met gerichte oefeningen, leer van duidelijke uitleg en bouw stap voor stap je spelinzicht op.</p>
-            <a class="primary" href="testen/index.html">Help mee testen <span>→</span></a>
-            <ul class="benefits">
-              <li>Gerichte oefeningen</li>
-              <li>Duidelijke uitleg</li>
-              <li>Voor elk niveau</li>
-            </ul>
+
+    <main>
+      <section class="featured" id="games" aria-labelledby="game-title" data-slide="klaverjas-brain-trainer">
+        <div class="feature-topline"><span>De eerste game van Ceras</span><span class="slide-count">01 <i></i> 01</span></div>
+        <div class="feature-layout">
+          <div class="feature-visual" aria-label="Screenshots van Klaverjas Brain Trainer">
+            <figure class="screen screen-start"><img src="assets/klaverjas-startscherm.png" width="537" height="1187" alt="Het startscherm met verschillende klaverjasoefeningen" fetchpriority="high"></figure>
+            <figure class="screen screen-cards"><img src="assets/klaverjas-kaartoefening.png" width="573" height="1202" alt="Een kaartenoefening waarin je de hoogste kaart kiest" fetchpriority="high"></figure>
+            <figure class="screen screen-quiz"><img src="assets/klaverjas-oefening.png" width="563" height="1179" alt="Een oefening om roem te herkennen" fetchpriority="high"></figure>
+            <span class="visual-caption">Leren door te spelen</span>
           </div>
-          <div class="phones" aria-label="Screenshots van Klaverjas Brain Trainer">
-            <figure class="phone back left"><img src="assets/klaverjas-startscherm.png" alt="Startscherm met klaverjasoefeningen"></figure>
-            <figure class="phone back right"><img src="assets/klaverjas-kaartoefening.png" alt="Kaartoefening in de app"></figure>
-            <figure class="phone front"><img src="assets/klaverjas-oefening.png" alt="Oefening Roem herkennen"></figure>
-            <p class="scribble">Beter<br>klaverjassen,<br>stap voor<br>stap.</p>
-            <div class="cards" aria-hidden="true"><span>♣</span><span>♥</span><span>♠</span></div>
+          <div class="feature-copy">
+            <p class="eyebrow"><span class="live-dot"></span> In gesloten test</p>
+            <h1 id="game-title">Klaverjas<br>Brain Trainer</h1>
+            <p class="game-deck">Krijg grip op het spel, kaart voor kaart.</p>
+            <p class="game-description">Een mobiele oefenapp voor mensen die al kunnen klaverjassen. Train je kaartkennis en spelinzicht met korte, gerichte rondes.</p>
+            <a class="button" href="testen/index.html">Help mee testen <span aria-hidden="true">↗</span></a>
+            <p class="platform-note">Voor iOS en Android</p>
           </div>
         </div>
-        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="feature-bottom"><span>Klaverjas Brain Trainer</span><span>Een spel van Ceras Games</span></div>
       </section>
-      <section class="about">
-        <div class="wrap about-wrap">
+
+      <section class="studio" aria-labelledby="studio-title">
+        <p class="section-label" id="studio-title">Achter het spel <span>—</span></p>
+        <div class="studio-copy">
+          <h2>Klein team.<br>Veel aandacht.</h2>
           <div>
-            <p class="eyebrow dark">OVER CERAS GAMES <i></i></p>
-            <h2>Spellen met<br>aandacht</h2>
-            <p class="about-text">Ceras Games is een kleine, onafhankelijke gamestudio van één ontwikkelaar. Ik maak spellen met aandacht voor detail en plezier in het spelen.</p>
-            <a class="outline" href="index.html#nieuws" hidden>Meer over Ceras Games <span>→</span></a>
+            <p>Ceras Games is een kleine gamestudio van één ontwikkelaar. Ik maak spellen met aandacht voor detail en plezier in het spelen.</p>
+            <p>Klaverjas Brain Trainer is het begin. Nieuwe ideeën krijgen de ruimte om op hun eigen tempo een goed spel te worden.</p>
           </div>
-          <div class="principles">
-            <article>
-              <span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 17h20c4 0 6 3 7 7l2 9c1 4-3 6-6 3l-5-5H16l-5 5c-3 3-7 1-6-3l2-9c1-4 3-7 7-7Z" fill="#073d30"/><path d="M14 22v8m-4-4h8" stroke="#f0cf87" stroke-width="2.5"/><circle cx="32" cy="24" r="2" fill="#f0cf87"/><circle cx="36" cy="28" r="2" fill="#f0cf87"/></svg></span>
-              <h3>Kleine studio</h3><p>Grote ideeën kunnen ook klein beginnen.</p>
-            </article>
-            <article>
-              <span><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 39S7 29 7 17c0-9 12-12 17-3 5-9 17-6 17 3 0 12-17 22-17 22Z" fill="#073d30"/></svg></span>
-              <h3>Met liefde voor spel</h3><p>Spellen maken die rust, uitdaging en plezier samenbrengen.</p>
-            </article>
-            <article>
-              <span><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="15" r="6" fill="#073d30"/><circle cx="11" cy="20" r="4" fill="#073d30"/><circle cx="37" cy="20" r="4" fill="#073d30"/><path d="M12 36c0-8 5-12 12-12s12 4 12 12v2H12Zm-9 0c0-6 3-9 8-9h2c-2 2-3 5-3 9Zm31-9h3c5 0 8 3 8 9H39c0-4-1-7-3-9Z" fill="#073d30"/></svg></span>
-              <h3>Voor echte spelers</h3><p>Gemaakt voor mensen die graag nét wat beter willen worden.</p>
-            </article>
-          </div>
-          <p class="scribble about-note">Een spel<br>voor nu,<br>meer later...</p>
         </div>
+        <div class="studio-signoff"><span class="signoff-mark" aria-hidden="true">C</span><span>Onafhankelijk gemaakt<br>met plezier in het spel.</span><span class="studio-suit" aria-hidden="true">♣</span><span class="studio-note">KLEIN BEGONNEN<br>MET GROTE LIEFDE<br>VOOR GOED SPEL.</span></div>
       </section>
-      <section class="news" id="nieuws" hidden>
-        <div class="wrap news-wrap">
-          <div class="news-heading">
-            <div><p class="eyebrow dark">NIEUWS <i></i></p><h2>Het laatste<br>van Ceras Games</h2><p>Updates, aankondigingen en een kijkje achter de schermen.</p></div>
-            <a href="index.html#nieuws">Bekijk alle nieuwsberichten <span>→</span></a>
-          </div>
-          <div class="news-grid">
-            <article class="story"><div class="thumb cards-thumb"><span>♥</span><span>♠</span><span>♣</span><b>✦</b></div><div class="story-body"><time>12 JAN 2026</time><h3>Klaverjas Brain Trainer nu beschikbaar</h3><p>De app is vanaf vandaag te downloaden op iOS en Android.</p><a href="testen/index.html" aria-label="Lees meer">→</a></div></article>
-            <article class="story"><div class="thumb stats-thumb"><span>◉</span><b>▮▮▮</b></div><div class="story-body"><time>5 JAN 2026</time><h3>Nieuwe oefeningen en statistieken</h3><p>We werken aan nieuwe oefeningen en een overzicht van je voortgang. Stay tuned!</p><a href="testen/index.html" aria-label="Lees meer">→</a></div></article>
-            <article class="story"><div class="thumb mug-thumb"><span>☕</span></div><div class="story-body"><time>22 DEC 2025</time><h3>Achter de schermen</h3><p>Een kijkje in het ontwikkelingsproces van Klaverjas Brain Trainer.</p><a href="testen/index.html" aria-label="Lees meer">→</a></div></article>
-          </div>
-          <span class="scribble news-note">Goede<br>spellen blijven<br>hangen.</span>
+
+      <section class="practice" aria-labelledby="practice-title">
+        <div class="practice-heading"><p class="section-label">Pak de kaarten erbij</p><h2 id="practice-title">Oefen. Ontdek.<br>Speel met inzicht.</h2><p>Een voorproefje van Klaverjas Brain Trainer.</p><span class="practice-suit" aria-hidden="true">♠</span></div>
+        <div class="practice-grid">
+          <article class="practice-item practice-item-one"><div class="practice-image"><img src="assets/klaverjas-startscherm.png" width="537" height="1187" alt="Overzicht van klaverjasoefeningen in de app" loading="lazy"><span>01</span></div><p class="practice-label">Kies je oefening</p><h3>Een slag tegelijk</h3><p>Korte oefeningen om rustig te trainen, op jouw moment.</p></article>
+          <article class="practice-item practice-item-two"><div class="practice-image"><img src="assets/klaverjas-oefening.png" width="563" height="1179" alt="Klaverjasslag in de oefening Roem herkennen" loading="lazy"><span>02</span></div><p class="practice-label">Kijk goed naar de slag</p><h3>Zie de roem</h3><p>Leer combinaties herkennen en ontdek wat er op tafel ligt.</p></article>
+          <article class="practice-item practice-item-three"><div class="practice-image"><img src="assets/klaverjas-kaartoefening.png" width="573" height="1202" alt="Twee speelkaarten in de oefening Hoogste kaart" loading="lazy"><span>03</span></div><p class="practice-label">Maak je keuze</p><h3>Vind de hoogste kaart</h3><p>Vergelijk de kaarten en bepaal welke kaart de slag wint.</p></article>
+        </div>
+        <a class="practice-link" href="testen/index.html">Ontdek hoe je kunt testen <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="news" id="nieuws" aria-labelledby="news-title" hidden>
+        <div class="news-heading"><p class="section-label">Van de ontwikkeltafel</p><h2 id="news-title">Nieuws &amp; updates</h2><p>Kleine stappen, nieuwe oefeningen en nieuws over de test.</p></div>
+        <div class="news-list">
+          <!-- Voorbeeldcontent behouden voor wanneer de nieuwssectie wordt aangezet. -->
+          <article class="news-item news-one"><div class="news-image"><img src="assets/klaverjas-startscherm.png" width="537" height="1187" alt="Het beginscherm van Klaverjas Brain Trainer" loading="lazy"><span class="news-stamp">TEST<br>LOGBOEK</span></div><div class="news-content"><p class="news-tag">Testers gezocht <span>· Voorbeeld</span></p><time datetime="2026-09-23">23 september 2026</time><h3>Speel jij een rondje mee?</h3><p>De eerste testrondes zijn begonnen. Klaverjassers kunnen helpen de oefeningen duidelijker en leuker te maken.</p><a href="testen/index.html">Meer over testen <span aria-hidden="true">↗</span></a></div></article>
+          <article class="news-item news-two"><div class="news-image"><img src="assets/klaverjas-oefening.png" width="563" height="1179" alt="De oefening Roem herkennen" loading="lazy"><span class="news-stamp">IN<br>MAAK</span></div><div class="news-content"><p class="news-tag">In ontwikkeling <span>· Voorbeeld</span></p><time datetime="2026-09-10">10 september 2026</time><h3>Oefenen met roem herkennen</h3><p>Een nieuwe oefening helpt je combinaties aan tafel sneller te zien, slag na slag.</p><a href="#practice-title">Bekijk de oefeningen <span aria-hidden="true">↗</span></a></div></article>
+          <article class="news-item news-three"><div class="news-image"><img src="assets/klaverjas-kaartoefening.png" width="573" height="1202" alt="Een kaartenoefening uit de app" loading="lazy"><span class="news-stamp">BETA<br>UPDATE</span></div><div class="news-content"><p class="news-tag">iOS &amp; Android <span>· Voorbeeld</span></p><time datetime="2026-08-28">28 augustus 2026</time><h3>De eerste versie staat klaar</h3><p>De app wordt getest op iOS en Android. Nieuwe testers kunnen zich aanmelden zodra er plekken zijn.</p><a href="testen/index.html">Lees over de test <span aria-hidden="true">↗</span></a></div></article>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="wrap">
-        <p>© 2026 Ceras Games</p>
-        <nav aria-label="Footer"><a href="privacy.html">Privacy</a><a href="testen/index.html">Testen</a><i></i><span class="scribble">Spellen met aandacht</span></nav>
-      </div>
+
+    <footer class="site-footer">
+      <div class="footer-main"><a class="footer-brand" href="#top">CERAS <b>GAMES</b></a><p>Spellen met aandacht voor detail<br>en plezier in het spelen.</p><nav aria-label="Footernavigatie"><a href="privacy.html">Privacy</a><a href="testen/index.html">Testen</a></nav></div>
+      <div class="footer-bottom"><span>© 2026 Ceras Games</span><a href="#top">Terug naar boven ↑</a></div>
     </footer>
   </body>
 </html>
