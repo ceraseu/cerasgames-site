@@ -8,7 +8,7 @@
     <title>Test mee — Klaverjas Brain Trainer | Ceras Games</title>
     <link rel="icon" type="image/png" sizes="512x512" href="../assets/app-icon.png">
     <link rel="apple-touch-icon" href="../assets/app-icon.png">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../home.css">
     <link rel="stylesheet" href="testen.css">
   </head>
   <body>
@@ -20,22 +20,31 @@
       </nav>
     </header>
     <main class="tester-main">
-      <section class="tester-hero" aria-labelledby="test-title">
-        <div class="tester-hero-copy">
-          <p class="tester-kicker"><span aria-hidden="true">✦</span> KLAVERJAS BRAIN TRAINER · TESTVERSIE</p>
-          <h1 id="test-title">Welkom aan<br>de testtafel.</h1>
-          <p class="tester-lead">Fijn dat je mee wilt spelen. Probeer de oefeningen op jouw toestel en vertel ons wat goed werkt en wat nog beter kan.</p>
-          <a class="tester-scroll" href="#aanmelden">Kies jouw toestel <span aria-hidden="true">↓</span></a>
+      <section class="hero" aria-labelledby="test-title">
+        <div class="wrap hero-wrap">
+          <div class="hero-copy">
+            <p class="eyebrow">KLAVERJAS BRAIN TRAINER · TESTVERSIE <i></i></p>
+            <h1 id="test-title">Welkom aan<br>de testtafel.</h1>
+            <p class="intro">Fijn dat je mee wilt spelen. Probeer de oefeningen op jouw toestel en vertel ons wat goed werkt en wat nog beter kan.</p>
+            <a class="primary" href="#aanmelden">Kies jouw toestel <span aria-hidden="true">→</span></a>
+            <ul class="benefits" aria-label="Wat je als tester kunt verwachten">
+              <li>Voor iOS en Android</li>
+              <li>Stap voor stap uitleg</li>
+              <li>Feedback welkom</li>
+            </ul>
+          </div>
+          <div class="phones" aria-label="Screenshots van Klaverjas Brain Trainer">
+            <figure class="phone back left"><img src="../assets/klaverjas-startscherm.png" alt="Startscherm met klaverjasoefeningen"></figure>
+            <figure class="phone back right"><img src="../assets/klaverjas-kaartoefening.png" alt="Kaartoefening in de app"></figure>
+            <figure class="phone front"><img src="../assets/klaverjas-oefening.png" alt="Oefening Roem herkennen"></figure>
+            <p class="scribble">Speel mee.<br>Leer samen.</p>
+            <div class="cards" aria-hidden="true"><span>♣</span><span>♥</span><span>♠</span></div>
+          </div>
         </div>
-        <div class="tester-art" aria-hidden="true">
-          <figure class="tester-screen tester-screen-start"><img src="../assets/klaverjas-startscherm.png" alt=""></figure>
-          <figure class="tester-screen tester-screen-cards"><img src="../assets/klaverjas-kaartoefening.png" alt=""></figure>
-          <figure class="tester-screen tester-screen-quiz"><img src="../assets/klaverjas-oefening.png" alt=""></figure>
-          <p class="tester-note">Speel mee.<br>Leer samen.</p>
-        </div>
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
       </section>
 
-      <section class="tester-join" id="aanmelden" aria-labelledby="join-title">
+      <section class="tester-join wrap" id="aanmelden" aria-labelledby="join-title">
         <div class="tester-section-heading">
           <p class="tester-eyebrow">DOE MEE</p>
           <h2 id="join-title">Kies jouw toestel.</h2>
@@ -59,7 +68,7 @@
         </div>
       </section>
 
-      <section class="tester-onboarding" aria-labelledby="onboarding-title">
+      <section class="tester-onboarding wrap" aria-labelledby="onboarding-title">
         <div class="onboarding-intro">
           <p class="tester-eyebrow">EERSTE KEER IN DE APP?</p>
           <h2 id="onboarding-title">Zo begin je.</h2>
@@ -73,7 +82,7 @@
         </ol>
       </section>
 
-      <section class="tester-feedback" aria-labelledby="feedback-title">
+      <section class="tester-feedback wrap" aria-labelledby="feedback-title">
         <div>
           <p class="tester-eyebrow">JOUW FEEDBACK HELPT</p>
           <h2 id="feedback-title">Wat liep lekker?<br>Wat kan duidelijker?</h2>
@@ -84,12 +93,12 @@
         </div>
       </section>
 
-      <aside class="tester-privacy">
+      <aside class="tester-privacy wrap">
         <span aria-hidden="true">♧</span>
         <p><strong>Je speelt privé.</strong> De app heeft geen account en bewaart instellingen en voortgang op je toestel. Er wordt niets automatisch naar Ceras Games verstuurd. <a href="../privacy.html">Lees de privacyverklaring</a>.</p>
       </aside>
     </main>
-    <footer><p>© <span id="year">2026</span> Ceras Games</p><a href="../privacy.html">Privacy</a></footer>
+    <footer class="tester-footer"><div class="wrap"><p>© <span id="year">2026</span> Ceras Games</p><a href="../privacy.html">Privacy</a></div></footer>
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
