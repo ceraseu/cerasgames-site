@@ -93,7 +93,8 @@ body { background: var(--cream); color: var(--forest-deep); }
 .site-header { position: absolute; z-index: 5; inset: 0 0 auto; width: 100%; max-width: none; padding-inline: var(--gutter); color: var(--cream); }
 main { width: 100%; max-width: none; padding-inline: 0; }
 .site-nav { height: 76px; min-height: 0; border: 0; border-bottom: 1px solid rgb(243 239 223 / 14%); }
-.wordmark { display: inline-flex; align-items: center; color: var(--cream); font-size: .86rem; font-weight: 760; letter-spacing: .13em; }
+.wordmark { display: inline-flex; align-items: center; gap: .72rem; color: var(--cream); font-size: .86rem; font-weight: 760; letter-spacing: .13em; text-decoration: none; white-space: nowrap; }
+.wordmark img { display: block; width: 44px; height: 44px; flex: 0 0 auto; border-radius: 11px; }
 .nav-links { display: flex; align-items: center; gap: clamp(1.25rem, 2.8vw, 2.5rem); }
 .nav-link { color: var(--cream); font-size: .81rem; font-weight: 650; letter-spacing: .04em; transition: color .18s ease; }
 .nav-link:hover { color: var(--gold); text-decoration: none; }
@@ -159,7 +160,8 @@ footer p { margin: 0; }
   .game::before { inset: auto -25% -10% 0; height: 47%; }
 }
 @media (max-width: 390px) {
-  .wordmark { font-size: .73rem; letter-spacing: .1em; }
+  .wordmark { gap: .55rem; font-size: .73rem; letter-spacing: .1em; }
+  .wordmark img { width: 36px; height: 36px; border-radius: 9px; }
   .nav-links { gap: 1rem; }
   .nav-link { font-size: .75rem; }
   .game-art { min-height: 320px; }
