@@ -30,9 +30,9 @@ body:not(.home) main.tester-main { width: 100%; max-width: none; margin: 0; padd
 .apple-option .option-button { background: var(--test-green); color: var(--test-cream); }
 .option-button span { font-size: 1.1rem; }
 .option-footnote { margin-top: .8rem !important; color: #69736a !important; font-size: .78rem !important; line-height: 1.45 !important; }
-.option-download { margin-top: .75rem !important; font-size: .85rem !important; }
-.option-download strong { color: var(--test-deep); }
-.option-download a { display: inline-flex; align-items: center; gap: .3rem; color: var(--test-green); font-weight: 750; text-underline-offset: .2em; }
+.option-returning { margin-top: .8rem !important; font-size: .85rem !important; }
+.option-returning > span { display: block; }
+.option-returning a { display: inline-flex; min-height: 44px; align-items: center; gap: .3rem; color: var(--test-green); font-weight: 750; text-underline-offset: .2em; }
 
 .tester-onboarding { display: grid; grid-template-columns: minmax(230px, .72fr) minmax(0, 1.28fr); gap: clamp(2.5rem, 8vw, 7rem); padding-block: clamp(3rem, 6vw, 5rem); border-top: 1px solid #d7d5c8; }
 .onboarding-intro h2 { margin: .65rem 0 1rem; }
